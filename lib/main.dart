@@ -1,8 +1,8 @@
-
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutterapp/page/page.dart';
 import 'package:flutterapp/page/route.dart';
+import 'package:flutterapp/simpleLayout/layo.dart';
 import 'package:flutterapp/stulwidget/counter.dart';
 import 'package:flutterapp/widget/custom_appbar.dart';
 import 'package:flutterapp/widget/gesture_detector.dart';
@@ -29,3 +29,13 @@ import 'package:flutterapp/widget/user_material.dart';
 //        "/second":(context)=>RoutSecondScreen(),
 //      },
 //    ));
+
+void main() => runApp(new MaterialApp(
+      title: '111',
+      home: new Scaffold(
+        appBar: new AppBar(
+          title: new Text('aaa'),
+        ),
+        body: new MyCustomWidget(),
+      ),
+    ));
