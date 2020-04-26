@@ -6,6 +6,7 @@ import 'package:flutterapp/page/page.dart';
 import 'package:flutterapp/page/route.dart';
 import 'package:flutterapp/stulwidget/counter.dart';
 import 'package:flutterapp/tab/simpleTabbar.dart';
+import 'package:flutterapp/viewpager/viewpager.dart';
 import 'package:flutterapp/widget/custom_appbar.dart';
 import 'package:flutterapp/widget/gesture_detector.dart';
 import 'package:flutterapp/widget/user_material.dart';
@@ -69,7 +70,17 @@ import 'tab/diffcultTabbar.dart';
 //      title: "111",
 //      home: new DefaultTabController(length: 6, child: new SimpleTabbarView()),
 //    ));
+//void main() => runApp(new MaterialApp(
+//  title: "111",
+//  home: new BarApp(),
+//));
+
 void main() => runApp(new MaterialApp(
-  title: "111",
-  home: new BarApp(),
-));
+      title: 'aa',
+      home: new Scaffold(
+        appBar: new AppBar(
+          title: new Text("我是viewpager"),
+        ),
+        body: new ViewPager(),
+      ),
+    ));
