@@ -5,12 +5,14 @@ import 'package:flutterapp/life/lfie1.dart';
 import 'package:flutterapp/page/page.dart';
 import 'package:flutterapp/page/route.dart';
 import 'package:flutterapp/stulwidget/counter.dart';
+import 'package:flutterapp/tab/simpleTabbar.dart';
 import 'package:flutterapp/widget/custom_appbar.dart';
 import 'package:flutterapp/widget/gesture_detector.dart';
 import 'package:flutterapp/widget/user_material.dart';
 
 import 'lists/list.dart';
 import 'lists/nesterList.dart';
+import 'tab/diffcultTabbar.dart';
 
 //void main() => runApp(new MaterialApp(
 //  title: 'My App',
@@ -58,10 +60,16 @@ import 'lists/nesterList.dart';
 //  },
 //));
 
-/**
- * 多个效果联动、嵌套滚动、精细滑动、视图跟随手势操作等
- */
+//void main() => runApp(new MaterialApp(
+//  title: 'aa',
+//  home:new NestedList(),
+//));
+
+//void main() => runApp(new MaterialApp(
+//      title: "111",
+//      home: new DefaultTabController(length: 6, child: new SimpleTabbarView()),
+//    ));
 void main() => runApp(new MaterialApp(
-  title: 'aa',
-  home:new NestedList(),
+  title: "111",
+  home: new BarApp(),
 ));
