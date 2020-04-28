@@ -93,7 +93,7 @@ class WrapHorizontalWidget extends StatelessWidget {
 class DynamicListWidget extends StatelessWidget {
   final List<String> items;
 
-  DynamicListWidget({Key key, @required this.items});
+  DynamicListWidget({Key key, this.items});
 
   @override
   Widget build(BuildContext context) {

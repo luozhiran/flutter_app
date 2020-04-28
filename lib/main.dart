@@ -11,6 +11,8 @@ import 'package:flutterapp/widget/custom_appbar.dart';
 import 'package:flutterapp/widget/gesture_detector.dart';
 import 'package:flutterapp/widget/user_material.dart';
 
+import 'decorated/simpleDecorat.dart';
+import 'layout/layout.dart';
 import 'lists/list.dart';
 import 'lists/nesterList.dart';
 import 'tab/diffcultTabbar.dart';
@@ -75,12 +77,33 @@ import 'tab/diffcultTabbar.dart';
 //  home: new BarApp(),
 //));
 
-void main() => runApp(new MaterialApp(
-      title: 'aa',
-      home: new Scaffold(
-        appBar: new AppBar(
-          title: new Text("我是viewpager"),
-        ),
-        body: new ViewPager(),
-      ),
-    ));
+//void main() => runApp(new MaterialApp(
+//      title: 'aa',
+//      home: new Scaffold(
+//        appBar: new AppBar(
+//          title: new Text("我是viewpager"),
+//        ),
+//        body: new ViewPager(),
+//      ),
+//    ));
+
+//void main() => runApp(new MaterialApp(
+//      title: '123',
+//      home: new Scaffold(
+//        appBar: new AppBar(
+//          title: new Text("我对Text进行了装饰"),
+//        ),
+//        body: new MySimpleDecoratButton(),
+//      ),
+//    ));
+
+
+void main()=>runApp(new MaterialApp(
+  title: '111',
+  home: new Scaffold(
+    appBar: new AppBar(
+      title: new Text('弹性布局'),
+    ),
+    body: new FlexLayoutTestRoute(),
+  ),
+));
