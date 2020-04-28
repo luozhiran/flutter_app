@@ -6,6 +6,7 @@ import 'package:flutterapp/page/page.dart';
 import 'package:flutterapp/page/route.dart';
 import 'package:flutterapp/stulwidget/counter.dart';
 import 'package:flutterapp/tab/simpleTabbar.dart';
+import 'package:flutterapp/viewpager/diffViewPager.dart';
 import 'package:flutterapp/viewpager/viewpager.dart';
 import 'package:flutterapp/widget/custom_appbar.dart';
 import 'package:flutterapp/widget/gesture_detector.dart';
@@ -77,6 +78,22 @@ import 'tab/diffcultTabbar.dart';
 //  home: new BarApp(),
 //));
 
+//void main() => runApp(new MaterialApp(
+//      title: 'aa',
+//      home: new Scaffold(
+//        appBar: new AppBar(
+//          title: new Text("我是viewpager"),
+//        ),
+//        body: new ViewPager(),
+//      ),
+//    ));
+
+void main(){
+  return runApp(new MaterialApp(
+    title: 'aaa',
+    home: new DiffViewPager(),
+  ));
+}
 //void main() => runApp(new MaterialApp(
 //      title: 'aa',
 //      home: new Scaffold(
