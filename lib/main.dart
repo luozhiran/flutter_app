@@ -6,6 +6,7 @@ import 'package:flutterapp/page/page.dart';
 import 'package:flutterapp/page/route.dart';
 import 'package:flutterapp/stulwidget/counter.dart';
 import 'package:flutterapp/tab/simpleTabbar.dart';
+import 'package:flutterapp/use/factory.dart';
 import 'package:flutterapp/viewpager/diffViewPager.dart';
 import 'package:flutterapp/viewpager/viewpager.dart';
 import 'package:flutterapp/widget/custom_appbar.dart';
@@ -88,12 +89,12 @@ import 'tab/diffcultTabbar.dart';
 //      ),
 //    ));
 
-void main(){
-  return runApp(new MaterialApp(
-    title: 'aaa',
-    home: new DiffViewPager(),
-  ));
-}
+//void main(){
+//  return runApp(new MaterialApp(
+//    title: 'aaa',
+//    home: new DiffViewPager(),
+//  ));
+//}
 //void main() => runApp(new MaterialApp(
 //      title: 'aa',
 //      home: new Scaffold(
@@ -115,12 +116,18 @@ void main(){
 //    ));
 
 
+//void main()=>runApp(new MaterialApp(
+//  title: '111',
+//  home: new Scaffold(
+//    appBar: new AppBar(
+//      title: new Text('弹性布局'),
+//    ),
+//    body: new FlexLayoutTestRoute(),
+//  ),
+//));
+
+
 void main()=>runApp(new MaterialApp(
-  title: '111',
-  home: new Scaffold(
-    appBar: new AppBar(
-      title: new Text('弹性布局'),
-    ),
-    body: new FlexLayoutTestRoute(),
-  ),
+  title: '11',
+  home: new Com(),
 ));
