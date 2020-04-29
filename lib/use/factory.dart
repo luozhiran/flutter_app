@@ -29,6 +29,7 @@ class Com extends StatelessWidget {
             child: new MyCustomFour(imgUrl, name),
           ),
           new NestedHorizontalList(imgUrl, name),
+          new SliverToBoxAdapter(child: new MyCustomThree(),)
         ],
       ),
     );

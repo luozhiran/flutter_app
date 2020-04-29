@@ -1,5 +1,6 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter/widgets.dart';
 
 class MyCustomFour extends StatelessWidget {
   List<String> imgUrl;
@@ -126,12 +127,68 @@ class _MySliverListState extends State<_MySliverList> {
       itemCount: imgUrl.length,
       scrollDirection: Axis.horizontal,
 //      itemBuilder: (context, index) => _getColumn(imgUrl[index], name[index]),
-      itemBuilder: (context, index) =>
-      new GestureDetector(
+      itemBuilder: (context, index) => new GestureDetector(
         onTap: () {
           print("ddddddddddddddddddddddddddddddddddddddddd");
         },
         child: _getColumn(imgUrl[index], name[index]),
+      ),
+    );
+  }
+}
+
+class MyCustomThree extends StatelessWidget {
+  Widget _getImg() {
+    return new IconButton(icon: new Icon(Icons.add), onPressed: null);
+  }
+
+  Widget _getText(String name) {
+    return new Text(name);
+  }
+
+  Widget _getColumn(String icon, String title) {
+    return new Container(
+      color: Colors.white,
+      padding: EdgeInsets.only(left: 40,right: 40,top: 10,bottom: 10),
+      child: new Center(
+        child: new Column(
+          children: <Widget>[
+            _getImg(),
+            _getText(title),
+          ],
+        ),
+      ),
+    );
+  }
+
+  @override
+  Widget build(BuildContext context) {
+    // TODO: implement build
+    return new Container(
+      padding: EdgeInsets.only(top: 10,bottom: 10),
+      color: Colors.grey[200],
+      child: new Flex(
+        direction: Axis.horizontal,
+        children: <Widget>[
+          new Expanded(
+              flex: 1,
+              child: new GestureDetector(
+                onTap: () {},
+                child: _getColumn('', "aaaa"),
+              )),
+          new Expanded(
+              flex: 1,
+              child: new GestureDetector(
+                onTap: () {},
+                child: _getColumn('', "bbbbb"),
+              )),
+          new Expanded(
+              flex: 1,
+              child: new GestureDetector(
+                onTap: () {},
+                child: _getColumn('', "ccccc"),
+              )),
+        ],
       ),
     );
   }
